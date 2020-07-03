@@ -63,7 +63,7 @@ fastify.listen(4331, err => {
 });
 ```
 
-### Usage multiple with Options and Separate Route File
+#### Register multiple Firebase projects w/ options and Separate Route File
 
 ```js
 const fastify = require('fastify')({logger: true});
