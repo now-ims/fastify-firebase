@@ -4,7 +4,6 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/now-ims/fastify-firebase/badge.svg?targetFile=package.json)](https://snyk.io/test/github/now-ims/fastify-firebase?targetFile=package.json)
 [![Coverage Status](https://coveralls.io/repos/github/now-ims/fastify-firebase/badge.svg?branch=master)](https://coveralls.io/github/now-ims/fastify-firebase?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
-
 ![npm (scoped)](https://img.shields.io/npm/v/@now-ims/fastify-firebase?color=E55812)
 
 This plugin adds the [Firebase Admin SDK](https://firebase.google.com/docs/admin/setup) to Fastify so you can easy use Firebase Auth, Firestore, Cloud Storage, Cloud Messaging, and more.
@@ -114,6 +113,12 @@ async function userRoute(fastify, options) {
   });
 }
 ```
+
+## Acknowledgements
+
+This project is sponsored and maintained by:
+
+- [Now IMS](https://nowims.com)
 
 ## License
 
