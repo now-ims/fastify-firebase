@@ -77,3 +77,26 @@ test('Should throw with same name twice', t => {
     t.is(error.message, 'fastify-firebase same already registered');
   });
 });
+
+test('Should pass with two configs', t => {
+  t.plan(2);
+  const fastify = Fastify();
+  t.tearDown(() => fastify.close());
+
+  fastify.register(fastifyFirebase, {
+    name: 'name1',
+    cert: process.env.GOOGLE_APPLICATION_CREDENTIALS,
+    databaseURL: process.env.GOOGLE_DEV_DB,
+  });
+
+  fastify.register(fastifyFirebase, {
+    name: 'name2',
+    cert: process.env.GOOGLE_APPLICATION_CREDENTIALS,
+    databaseURL: process.env.GOOGLE_DEV_DB,
+  });
+
+  fastify.ready(error => {
+    t.error(error);
+    t.is(fastify.firebase.name, 'name1');
+  });
+});

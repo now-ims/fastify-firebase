@@ -3,7 +3,7 @@
 const fp = require('fastify-plugin');
 const fb = require('firebase-admin');
 
-function firebase(fastify, options = {name: 'default'}, next) {
+function firebase(fastify, options, next) {
   const {name, databaseURL, cert, storageBucket} = options;
 
   const appConfig = {
