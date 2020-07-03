@@ -1,0 +1,43 @@
+{
+  "name": "@now-ims/fastify-firebase",
+  "version": "1.0.0",
+  "description": "Fastify Firebase Admin plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap -J test.js",
+    "test:report": "tap -J test.js --coverage-report=html",
+    "test:verbose": "tap -J test.js -Rspec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:now-ims/fastify-firebase.git"
+  },
+  "keywords": [
+    "fastify",
+    "firebase",
+    "firestore",
+    "firebase-admin",
+    "nosql",
+    "database",
+    "connection",
+    "auth",
+    "authentication"
+  ],
+  "author": "John Rodkey <developers@nowims.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/now-ims/fastify-firebase/issues"
+  },
+  "homepage": "https://github.com/now-ims/fastify-firebase#readme",
+  "dependencies": {
+    "fastify-plugin": "^1.6.1",
+    "firebase-admin": "^8.13.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "fastify": "^2.15.1",
+    "tap": "^14.10.7"
+  }
+}
