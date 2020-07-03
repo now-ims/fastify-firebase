@@ -6,7 +6,7 @@
   "scripts": {
     "test": "tap -J test.js",
     "test:report": "tap -J test.js --coverage-report=html",
-    "test:verbose": "tap -J test.js -Rspec"
+    "test:ci": "tap -J --coverage-report=lcovonly test.js"
   },
   "repository": {
     "type": "git",
