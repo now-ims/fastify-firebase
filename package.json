@@ -30,11 +30,11 @@
   },
   "homepage": "https://github.com/now-ims/fastify-firebase#readme",
   "dependencies": {
-    "fastify-plugin": "^1.6.1",
-    "firebase-admin": "^8.13.0"
+    "fastify-plugin": "^3.0.0",
+    "firebase-admin": "^9.4.1"
   },
   "devDependencies": {
-    "fastify": "^2.15.1",
-    "tap": "^14.10.7"
+    "fastify": "^3.8.0",
+    "tap": "^14.11.0"
   }
 }
