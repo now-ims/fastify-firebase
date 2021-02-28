@@ -4,11 +4,12 @@ const fp = require('fastify-plugin');
 const fb = require('firebase-admin');
 
 function firebase(fastify, options, next) {
-  const {name, databaseURL, cert, storageBucket} = options;
+  const { name, databaseURL, cert, storageBucket, projectId } = options;
 
   const appConfig = {
     databaseURL,
     storageBucket,
+    projectId,
     credential: cert
       ? fb.credential.cert(cert)
       : fb.credential.applicationDefault(),

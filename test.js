@@ -5,7 +5,7 @@ const test = t.test;
 const Fastify = require('fastify');
 const fastifyFirebase = require('./index');
 
-test('Should pass with no options', t => {
+test('Should pass with no options', (t) => {
   t.plan(2);
 
   const fastify = Fastify();
@@ -13,13 +13,13 @@ test('Should pass with no options', t => {
 
   fastify.register(fastifyFirebase);
 
-  fastify.ready(error => {
+  fastify.ready((error) => {
     t.error(error);
     t.is(fastify.firebase.name, '[DEFAULT]');
   });
 });
 
-test('Should pass if options includes cert path', t => {
+test('Should pass if options includes cert path', (t) => {
   t.plan(2);
 
   const fastify = Fastify();
@@ -30,13 +30,30 @@ test('Should pass if options includes cert path', t => {
     cert: process.env.GOOGLE_APPLICATION_CREDENTIALS,
   });
 
-  fastify.ready(error => {
+  fastify.ready((error) => {
     t.error(error);
     t.is(fastify.firebase.name, 'auth');
   });
 });
 
-test('Should pass if options passed with databaseURL aka real-time db url', t => {
+test('Should pass if options includes projectId', (t) => {
+  t.plan(2);
+
+  const fastify = Fastify();
+  t.tearDown(() => fastify.close());
+
+  fastify.register(fastifyFirebase, {
+    name: 'withProjectId',
+    projectId: process.env.GOOGLE_PROJECT_ID,
+  });
+
+  fastify.ready((error) => {
+    t.error(error);
+    t.is(fastify.firebase.name, 'withProjectId');
+  });
+});
+
+test('Should pass if options passed with databaseURL aka real-time db url', (t) => {
   t.plan(2);
 
   const fastify = Fastify();
@@ -48,13 +65,13 @@ test('Should pass if options passed with databaseURL aka real-time db url', t =>
     databaseURL: process.env.GOOGLE_DEV_DB,
   });
 
-  fastify.ready(error => {
+  fastify.ready((error) => {
     t.error(error);
     t.is(fastify.firebase.name, 'withDbURL');
   });
 });
 
-test('Should throw with same name twice', t => {
+test('Should throw with same name twice', (t) => {
   t.plan(2);
   const fastify = Fastify();
   t.tearDown(() => fastify.close());
@@ -72,13 +89,13 @@ test('Should throw with same name twice', t => {
     databaseURL: process.env.GOOGLE_DEV_DB,
   });
 
-  fastify.ready(error => {
+  fastify.ready((error) => {
     t.ok(error);
     t.is(error.message, 'fastify-firebase same already registered');
   });
 });
 
-test('Should pass with two configs', t => {
+test('Should pass with two configs', (t) => {
   t.plan(2);
   const fastify = Fastify();
   t.tearDown(() => fastify.close());
@@ -95,7 +112,7 @@ test('Should pass with two configs', t => {
     databaseURL: process.env.GOOGLE_DEV_DB,
   });
 
-  fastify.ready(error => {
+  fastify.ready((error) => {
     t.error(error);
     t.is(fastify.firebase.name, 'name1');
   });
