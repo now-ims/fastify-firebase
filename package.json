@@ -21,7 +21,9 @@
     "database",
     "connection",
     "auth",
-    "authentication"
+    "authentication",
+    "datastore",
+    "google cloud"
   ],
   "author": "John Rodkey <developers@nowims.com>",
   "license": "MIT",

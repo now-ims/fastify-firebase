@@ -34,13 +34,14 @@ machineLearning - e.g., fastify.firebase.machineLearning().createModel()
   - `cert` (_Optional, Type: `string`_) **is required** if you you are not on Google Cloud or want to load multiple configurations
   - `databaseURL` (_Optional, Type: `string`_) **is required** for [Realtime Database](https://firebase.google.com/docs/database/admin/start)
   - `storageBucket` (_Optional, Type: `string`_) e.g., `<BUCKET_NAME>.appspot.com` - do not include any `gs://`
+  - `projectId` (_Default: `'cert.projectId'`, Type: `string`_) e.g., `my-google-cloud-project`
 
 ### Example
 
 #### Google Cloud - Application Default Credentials
 
 ```js
-const fastify = require('fastify')({logger: true});
+const fastify = require('fastify')({ logger: true });
 
 fastify.register(require('fastify-sensible'));
 fastify.register(require('@now-ims/fastify-firebase'));
@@ -59,7 +60,7 @@ fastify.get('/user/:id', async (req, reply) => {
   return user.data();
 });
 
-fastify.listen(4331, err => {
+fastify.listen(4331, (err) => {
   if (err) throw err;
   console.log(`server listening on ${fastify.server.address().port}`);
 });
@@ -68,7 +69,7 @@ fastify.listen(4331, err => {
 #### Register multiple Firebase projects w/ options and Separate Route File
 
 ```js
-const fastify = require('fastify')({logger: true});
+const fastify = require('fastify')({ logger: true });
 
 fastify.register(require('fastify-sensible'));
 
@@ -87,7 +88,7 @@ fastify.register(require('@now-ims/fastify-firebase'), {
 });
 // this can only be called with fastify.firebase['client2']
 
-fastify.listen(4331, err => {
+fastify.listen(4331, (err) => {
   if (err) throw err;
   console.log(`server listening on ${fastify.server.address().port}`);
 });
@@ -98,7 +99,7 @@ In your route file you can simply do the following e.g.:
 ```js
 async function userRoute(fastify, options) {
   fastify.get('/users/:id', async (req, reply) => {
-    const {id} = req.params;
+    const { id } = req.params;
     const user = await fastify.firebase['client2']
       .firestore()
       .collection('users')
