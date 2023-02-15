@@ -18,7 +18,7 @@ npm i @now-ims/fastify-firebase -S
 ## Usage
 
 Add it to you project with `register` and you're done!  
-This plugin will add a `firebase` namespace in your Fastify instance - uou can access the Firebase SDK objects via `fastify.firebase`:
+This plugin will add a `firebase` namespace in your Fastify instance - you can access the Firebase SDK objects via `fastify.firebase`:
 
 ```
 auth - e.g., fastify.firebase.auth().createUser()
