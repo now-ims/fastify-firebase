@@ -1,0 +1,371 @@
+TAP version 14
+# Subtest: Should pass with no options
+    1..2
+    not ok 1 - t.tearDown is not a function
+      ---
+      stack: |
+        Test.<anonymous> (test.js:12:5)
+      at:
+        fileName: test.js
+        lineNumber: 12
+        columnNumber: 5
+        typeName: Test
+        methodName: <anonymous>
+        functionName: Test.<anonymous>
+      type: TypeError
+      tapCaught: testFunctionThrow
+      source: |2
+      
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+        ----^
+      
+          fastify.register(fastifyFirebase);
+      ...
+    
+    not ok 2 - test count(1) != plan(2)
+      ---
+      at:
+        fileName: test.js
+        lineNumber: 9
+        columnNumber: 5
+        typeName: Test
+      source: |
+      
+        test("Should pass with no options", (t) => {
+          t.plan(2);
+        ----^
+      
+          const fastify = Fastify();
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,1 +1,1 @@
+        -2
+        +1
+      ...
+    
+not ok 1 - Should pass with no options # time=15.763ms
+  ---
+  at:
+    fileName: test.js
+    lineNumber: 8
+    columnNumber: 1
+    typeName: Object
+  source: |
+    const fastifyFirebase = require("./index");
+  
+    test("Should pass with no options", (t) => {
+    ^
+      t.plan(2);
+  ...
+
+# Subtest: Should pass if options includes cert path
+    1..2
+    not ok 1 - t.tearDown is not a function
+      ---
+      stack: |
+        Test.<anonymous> (test.js:26:5)
+      at:
+        fileName: test.js
+        lineNumber: 26
+        columnNumber: 5
+        typeName: Test
+        methodName: <anonymous>
+        functionName: Test.<anonymous>
+      type: TypeError
+      tapCaught: testFunctionThrow
+      source: |2
+      
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+        ----^
+      
+          fastify.register(fastifyFirebase, {
+      ...
+    
+    not ok 2 - test count(1) != plan(2)
+      ---
+      at:
+        fileName: test.js
+        lineNumber: 23
+        columnNumber: 5
+        typeName: Test
+      source: |
+      
+        test("Should pass if options includes cert path", (t) => {
+          t.plan(2);
+        ----^
+      
+          const fastify = Fastify();
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,1 +1,1 @@
+        -2
+        +1
+      ...
+    
+not ok 2 - Should pass if options includes cert path # time=2.725ms
+  ---
+  at:
+    fileName: test.js
+    lineNumber: 22
+    columnNumber: 1
+    typeName: Object
+  source: |
+    });
+  
+    test("Should pass if options includes cert path", (t) => {
+    ^
+      t.plan(2);
+  ...
+
+# Subtest: Should pass if options includes projectId
+    1..2
+    not ok 1 - t.tearDown is not a function
+      ---
+      stack: |
+        Test.<anonymous> (test.js:43:5)
+      at:
+        fileName: test.js
+        lineNumber: 43
+        columnNumber: 5
+        typeName: Test
+        methodName: <anonymous>
+        functionName: Test.<anonymous>
+      type: TypeError
+      tapCaught: testFunctionThrow
+      source: |2
+      
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+        ----^
+      
+          fastify.register(fastifyFirebase, {
+      ...
+    
+    not ok 2 - test count(1) != plan(2)
+      ---
+      at:
+        fileName: test.js
+        lineNumber: 40
+        columnNumber: 5
+        typeName: Test
+      source: |
+      
+        test("Should pass if options includes projectId", (t) => {
+          t.plan(2);
+        ----^
+      
+          const fastify = Fastify();
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,1 +1,1 @@
+        -2
+        +1
+      ...
+    
+not ok 3 - Should pass if options includes projectId # time=2.452ms
+  ---
+  at:
+    fileName: test.js
+    lineNumber: 39
+    columnNumber: 1
+    typeName: Object
+  source: |
+    });
+  
+    test("Should pass if options includes projectId", (t) => {
+    ^
+      t.plan(2);
+  ...
+
+# Subtest: Should pass if options passed with databaseURL aka real-time db url
+    1..2
+    not ok 1 - t.tearDown is not a function
+      ---
+      stack: |
+        Test.<anonymous> (test.js:60:5)
+      at:
+        fileName: test.js
+        lineNumber: 60
+        columnNumber: 5
+        typeName: Test
+        methodName: <anonymous>
+        functionName: Test.<anonymous>
+      type: TypeError
+      tapCaught: testFunctionThrow
+      source: |2
+      
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+        ----^
+      
+          fastify.register(fastifyFirebase, {
+      ...
+    
+    not ok 2 - test count(1) != plan(2)
+      ---
+      at:
+        fileName: test.js
+        lineNumber: 57
+        columnNumber: 5
+        typeName: Test
+      source: >
+      
+        test("Should pass if options passed with databaseURL aka real-time db url", (t) => {
+          t.plan(2);
+        ----^
+      
+          const fastify = Fastify();
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,1 +1,1 @@
+        -2
+        +1
+      ...
+    
+not ok 4 - Should pass if options passed with databaseURL aka real-time db url # time=3.997ms
+  ---
+  at:
+    fileName: test.js
+    lineNumber: 56
+    columnNumber: 1
+    typeName: Object
+  source: >
+    });
+  
+  
+    test("Should pass if options passed with databaseURL aka real-time db url", (t) => {
+  
+    ^
+      t.plan(2);
+  ...
+
+# Subtest: Should throw with same name twice
+    1..2
+    not ok 1 - t.tearDown is not a function
+      ---
+      stack: |
+        Test.<anonymous> (test.js:77:5)
+      at:
+        fileName: test.js
+        lineNumber: 77
+        columnNumber: 5
+        typeName: Test
+        methodName: <anonymous>
+        functionName: Test.<anonymous>
+      type: TypeError
+      tapCaught: testFunctionThrow
+      source: |2
+          t.plan(2);
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+        ----^
+          const name = "same";
+      ...
+    
+    not ok 2 - test count(1) != plan(2)
+      ---
+      at:
+        fileName: test.js
+        lineNumber: 75
+        columnNumber: 5
+        typeName: Test
+      source: |
+      
+        test("Should throw with same name twice", (t) => {
+          t.plan(2);
+        ----^
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,1 +1,1 @@
+        -2
+        +1
+      ...
+    
+not ok 5 - Should throw with same name twice # time=2.487ms
+  ---
+  at:
+    fileName: test.js
+    lineNumber: 74
+    columnNumber: 1
+    typeName: Object
+  source: |
+    });
+  
+    test("Should throw with same name twice", (t) => {
+    ^
+      t.plan(2);
+      const fastify = Fastify();
+  ...
+
+# Subtest: Should pass with two configs
+    1..2
+    not ok 1 - t.tearDown is not a function
+      ---
+      stack: |
+        Test.<anonymous> (test.js:101:5)
+      at:
+        fileName: test.js
+        lineNumber: 101
+        columnNumber: 5
+        typeName: Test
+        methodName: <anonymous>
+        functionName: Test.<anonymous>
+      type: TypeError
+      tapCaught: testFunctionThrow
+      source: |2
+          t.plan(2);
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+        ----^
+      
+          fastify.register(fastifyFirebase, {
+      ...
+    
+    not ok 2 - test count(1) != plan(2)
+      ---
+      at:
+        fileName: test.js
+        lineNumber: 99
+        columnNumber: 5
+        typeName: Test
+      source: |
+      
+        test("Should pass with two configs", (t) => {
+          t.plan(2);
+        ----^
+          const fastify = Fastify();
+          t.tearDown(() => fastify.close());
+      diff: |
+        --- expected
+        +++ actual
+        @@ -1,1 +1,1 @@
+        -2
+        +1
+      ...
+    
+not ok 6 - Should pass with two configs # time=2.331ms
+  ---
+  at:
+    fileName: test.js
+    lineNumber: 98
+    columnNumber: 1
+    typeName: Object
+  source: |
+    });
+  
+    test("Should pass with two configs", (t) => {
+    ^
+      t.plan(2);
+      const fastify = Fastify();
+  ...
+
+1..6

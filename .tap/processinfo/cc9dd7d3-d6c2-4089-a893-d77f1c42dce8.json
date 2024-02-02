@@ -1,0 +1,239 @@
+{
+  "date": "2024-02-02T05:12:20.416Z",
+  "argv": [
+    "/opt/homebrew/Cellar/node/21.6.1/bin/node",
+    "/Users/john/Projects/@now/fastify-firebase/test.js"
+  ],
+  "execArgv": [
+    "--import=file:///Users/john/Projects/@now/fastify-firebase/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "--import=file:///Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "--enable-source-maps",
+    "--import=file:///Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/processinfo/dist/esm/import.mjs"
+  ],
+  "NODE_OPTIONS": "\"--import=file:///Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/processinfo/dist/esm/import.mjs\"",
+  "cwd": "/Users/john/Projects/@now/fastify-firebase",
+  "pid": 34351,
+  "ppid": 34350,
+  "parent": null,
+  "uuid": "cc9dd7d3-d6c2-4089-a893-d77f1c42dce8",
+  "files": [
+    "/Users/john/Projects/@now/fastify-firebase/test.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import-loader.mjs",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/mock-service.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/is-relative-require.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/export-line.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/munge-mocks.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/service-key.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/call-site-like.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/require-resolve.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-all-conditional-values.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-all-conditions.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-all-exports.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-conditional-value.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-import.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/is-windows.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-conditional-values-list.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/errors.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/parse.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-named-exports-list.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/read-pkg.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-export.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/star-glob.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/to-path.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/file-exists.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/find-dep-package.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/to-file-url.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-package-import.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-dependency-export.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/walk-up-path/dist/mjs/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/find-star-match.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/read-json.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/glob.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/has-magic.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/assert-valid-pattern.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/ast.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/escape.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/unescape.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/path-scurry/dist/mjs/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/pattern.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/walker.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/brace-expressions.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/path-scurry/node_modules/lru-cache/dist/esm/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/minipass/dist/esm/index.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/ignore.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/processor.js",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/loader.mjs",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/hooks.mjs",
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/mock-service-client.js",
+    "/Users/john/Projects/@now/fastify-firebase/index.js"
+  ],
+  "sources": {
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/import.mjs": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/src/import.mts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/mock-service.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/src/mock-service.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/is-relative-require.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/is-relative-require.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/export-line.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/src/export-line.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/munge-mocks.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/src/munge-mocks.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/src/resolve-mock-entry-point.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/dist/esm/service-key.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/mock/src/service-key.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/call-site-like.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/src/call-site-like.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/require-resolve.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/src/require-resolve.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-all-conditional-values.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/get-all-conditional-values.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-all-conditions.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/get-all-conditions.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/get-unique-condition-sets.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-all-exports.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/resolve-all-exports.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/resolve-all-local-imports.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-conditional-value.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/resolve-conditional-value.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-import.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/resolve-import.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/is-windows.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/is-windows.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-conditional-values-list.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/get-conditional-values-list.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/errors.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/errors.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/dist/esm/parse.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/@tapjs/stack/src/parse.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/get-named-exports-list.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/get-named-exports-list.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/read-pkg.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/read-pkg.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-export.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/resolve-export.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/star-glob.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/star-glob.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/to-path.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/to-path.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/file-exists.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/file-exists.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/find-dep-package.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/find-dep-package.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/to-file-url.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/to-file-url.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-package-import.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/resolve-package-import.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/resolve-dependency-export.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/resolve-dependency-export.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/walk-up-path/dist/mjs/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/walk-up-path/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/find-star-match.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/find-star-match.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/dist/esm/read-json.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/src/read-json.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/glob.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/src/glob.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/has-magic.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/src/has-magic.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/assert-valid-pattern.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/src/assert-valid-pattern.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/ast.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/src/ast.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/escape.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/src/escape.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/unescape.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/src/unescape.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/path-scurry/dist/mjs/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/path-scurry/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/pattern.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/src/pattern.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/walker.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/src/walker.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/dist/mjs/brace-expressions.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/minimatch/src/brace-expressions.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/path-scurry/node_modules/lru-cache/dist/esm/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/path-scurry/node_modules/lru-cache/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/minipass/dist/esm/index.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/minipass/src/index.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/ignore.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/src/ignore.ts"
+    ],
+    "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/dist/esm/processor.js": [
+      "/Users/john/Projects/@now/fastify-firebase/node_modules/resolve-import/node_modules/glob/src/processor.ts"
+    ]
+  },
+  "root": "cc9dd7d3-d6c2-4089-a893-d77f1c42dce8",
+  "externalID": "test.js",
+  "code": 1,
+  "signal": null,
+  "runtime": 480.591459
+}
