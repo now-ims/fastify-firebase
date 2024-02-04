@@ -32,7 +32,6 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.github_token }}
-          file: ".tap/report/lcov.info"
           parallel: true
 
   finish:
@@ -43,5 +42,4 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.github_token }}
-          file: ".tap/report/lcov.info"
           parallel-finished: true
