@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [20, 21]
+        node: [20]
 
     name: Fastify-Firebase Node.js ${{ matrix.node }}
 
