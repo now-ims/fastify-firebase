@@ -22,11 +22,11 @@ jobs:
       - name: Install
         run: npm install
 
-      - name: Test
-        run: npm run test:ci
-
       - name: Create Coverage Directory
         run: mkdir coverage
+
+      - name: Test
+        run: npm run test:ci
 
       - name: Coveralls Parallel
         uses: coverallsapp/github-action@master
