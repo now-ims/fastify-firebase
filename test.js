@@ -9,13 +9,13 @@ test("Should pass with no options", (t) => {
   t.plan(2);
 
   const fastify = Fastify();
-  t.tearDown(() => fastify.close());
+  t.teardown(() => fastify.close());
 
   fastify.register(fastifyFirebase);
 
   fastify.ready((error) => {
     t.error(error);
-    t.is(fastify.firebase.name, "[DEFAULT]");
+    t.equal(fastify.firebase.name, "[DEFAULT]");
   });
 });
 
@@ -23,7 +23,7 @@ test("Should pass if options includes cert path", (t) => {
   t.plan(2);
 
   const fastify = Fastify();
-  t.tearDown(() => fastify.close());
+  t.teardown(() => fastify.close());
 
   fastify.register(fastifyFirebase, {
     name: "auth",
@@ -32,7 +32,7 @@ test("Should pass if options includes cert path", (t) => {
 
   fastify.ready((error) => {
     t.error(error);
-    t.is(fastify.firebase.name, "auth");
+    t.equal(fastify.firebase.name, "auth");
   });
 });
 
@@ -40,7 +40,7 @@ test("Should pass if options includes projectId", (t) => {
   t.plan(2);
 
   const fastify = Fastify();
-  t.tearDown(() => fastify.close());
+  t.teardown(() => fastify.close());
 
   fastify.register(fastifyFirebase, {
     name: "withProjectId",
@@ -49,7 +49,7 @@ test("Should pass if options includes projectId", (t) => {
 
   fastify.ready((error) => {
     t.error(error);
-    t.is(fastify.firebase.name, "withProjectId");
+    t.equal(fastify.firebase.name, "withProjectId");
   });
 });
 
@@ -57,7 +57,7 @@ test("Should pass if options passed with databaseURL aka real-time db url", (t) 
   t.plan(2);
 
   const fastify = Fastify();
-  t.tearDown(() => fastify.close());
+  t.teardown(() => fastify.close());
 
   fastify.register(fastifyFirebase, {
     name: "withDbURL",
@@ -67,14 +67,14 @@ test("Should pass if options passed with databaseURL aka real-time db url", (t) 
 
   fastify.ready((error) => {
     t.error(error);
-    t.is(fastify.firebase.name, "withDbURL");
+    t.equal(fastify.firebase.name, "withDbURL");
   });
 });
 
 test("Should throw with same name twice", (t) => {
   t.plan(2);
   const fastify = Fastify();
-  t.tearDown(() => fastify.close());
+  t.teardown(() => fastify.close());
   const name = "same";
 
   fastify.register(fastifyFirebase, {
@@ -91,14 +91,14 @@ test("Should throw with same name twice", (t) => {
 
   fastify.ready((error) => {
     t.ok(error);
-    t.is(error.message, "fastify-firebase same already registered");
+    t.equal(error.message, "fastify-firebase same already registered");
   });
 });
 
 test("Should pass with two configs", (t) => {
   t.plan(2);
   const fastify = Fastify();
-  t.tearDown(() => fastify.close());
+  t.teardown(() => fastify.close());
 
   fastify.register(fastifyFirebase, {
     name: "name1",
@@ -114,6 +114,6 @@ test("Should pass with two configs", (t) => {
 
   fastify.ready((error) => {
     t.error(error);
-    t.is(fastify.firebase.name, "name1");
+    t.equal(fastify.firebase.name, "name1");
   });
 });
