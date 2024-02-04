@@ -1,10 +1,10 @@
 import type { FastifyPluginCallback } from "fastify";
-import type { App } from "firebase-admin/app";
+import type firebase from "firebase-admin";
 type FastifyFirebase = FastifyPluginCallback<fastifyFirebase.FirebaseOptions>;
 
 declare module "fastify" {
   interface FastifyInstance {
-    firebase: App;
+    firebase: firebase;
   }
 }
 
