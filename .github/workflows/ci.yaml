@@ -29,7 +29,6 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.github_token }}
-          parallel: true
 
   finish:
     needs: test
@@ -39,4 +38,3 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.github_token }}
-          parallel-finished: true
