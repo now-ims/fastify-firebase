@@ -6,7 +6,7 @@
   "scripts": {
     "test": "tap test.js",
     "test:report": "tap test.js --coverage-report=html",
-    "test:ci": "tap --coverage-report=lcovonly --allow-incomplete-coverage test.js"
+    "test:ci": "tap --coverage-report=lcovonly test.js"
   },
   "repository": {
     "type": "git",

@@ -24,9 +24,11 @@ function firebase(fastify, options, next) {
     databaseURL,
     storageBucket,
     projectId,
+    /* c8 ignore start */
     credential: cert
       ? fb.credential.cert(cert)
       : fb.credential.applicationDefault(),
+    /* c8 ignore stop */
   };
 
   // We need to check if this name is already being used
