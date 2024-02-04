@@ -32,7 +32,7 @@ test("Should pass if options includes cert path", (t) => {
 
   fastify.ready((error) => {
     t.error(error);
-    t.equal(fastify.firebase.name, "auth");
+    t.notOk(fastify.firebase.cert);
   });
 });
 
