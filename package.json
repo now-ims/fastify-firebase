@@ -1,8 +1,10 @@
 {
   "name": "@now-ims/fastify-firebase",
-  "version": "2.0.0-rc",
+  "version": "2.0.1",
   "description": "Fastify Firebase Admin plugin",
   "main": "index.js",
+  "type": "commonjs",
+  "types": "index.d.ts",
   "scripts": {
     "test": "tap test.js",
     "test:report": "tap test.js --coverage-report=html",
