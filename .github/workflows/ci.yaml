@@ -29,5 +29,4 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.github_token }}
-          file: .tap/report/lcov.info
-          format: lcov
+          path-to-lcov: .tap/report/lcov.info
