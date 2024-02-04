@@ -50,3 +50,5 @@ module.exports = fp(firebase, {
   fastify: ">=1.1.0",
   name: "fastify-firebase",
 });
+module.exports.default = firebase;
+module.exports.firebase = firebase;
